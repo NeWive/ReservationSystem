@@ -1,5 +1,6 @@
 import React from 'react';
 import LogPanel from './LogPanel';
+import IndexPanel from './IndexPanel';
 import { connect } from 'react-redux';
 import './Index.scss';
 
@@ -14,7 +15,7 @@ class Index extends React.PureComponent {
         return (
             <div id="Index">
                 {
-                    !this.props.isLogin ? <LogPanel/> : ''
+                    !this.props.isLogin ? <LogPanel/> : <IndexPanel/>
                 }
             </div>
         );

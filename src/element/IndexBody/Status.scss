@@ -1,0 +1,8 @@
+@import "../../sassConfig/fontConfig";
+#Status {
+  @include statusBlue;
+  color: #333333;
+  .normal {
+    @include statusBlue;
+  }
+}

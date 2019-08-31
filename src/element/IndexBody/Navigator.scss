@@ -1,0 +1,29 @@
+@import "../../sassConfig/fontConfig";
+#Navigator {
+  margin: 101px 0 0 50px;
+  .navigator_container {
+    ul {
+      li {
+        margin-bottom: 81px;
+        border-radius: 3px 0 0 3px;
+        border-right: 4px solid transparent;
+        a {
+          @include moduleName;
+          height: 40px;
+          padding: 10px;
+          border-radius: 4px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:hover {
+          border-right: 4px solid #FFFFFF;
+          a {
+            background: #FFFFFF;
+            @include moduleNameSelected;
+          }
+        }
+      }
+    }
+  }
+}

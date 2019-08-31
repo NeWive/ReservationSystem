@@ -86,10 +86,6 @@ const naviList = [
         name: '注销登录',
         key: 'log_out',
     },
-    {
-        name: '返回首页',
-        key: 'return_index',
-    },
 ];
 const regulationLogForm = [
     {

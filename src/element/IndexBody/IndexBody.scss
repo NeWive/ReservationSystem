@@ -1,0 +1,23 @@
+@import "../../SassMixin/cleatFixMixin";
+#IndexBody {
+  height: 817px;
+  //@include clearFix;
+  position: relative;
+  .navigator_box, .module_box {
+    height: 100%;
+  }
+  .navigator_box {
+    position: absolute;
+    width: 400px;
+    background: #3295D9;
+    box-shadow:8px 0 10px 0 rgba(0, 0, 0, 0.16);
+  }
+  .module_box {
+    box-sizing: border-box;
+    padding-left: 500px;
+    padding-top: 100px;
+    //width: 1520px;
+    width: 100%;
+    background: #FFFFFF;
+  }
+}
