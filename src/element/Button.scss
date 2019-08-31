@@ -1,0 +1,18 @@
+@import "../SassMixin/radiusMixin";
+@import "../sassConfig/fontConfig";
+.button_blue {
+  width: 420px;
+  height: 70px;
+  background: #2878FF;
+  box-shadow: 0 5px 3px 0 #2878FF;
+  cursor: pointer;
+  text-align: center;
+  @include radius(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    vertical-align: middle;
+    @include buttonContent;
+  }
+}

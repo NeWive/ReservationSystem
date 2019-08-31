@@ -1,0 +1,15 @@
+@import "../sassConfig/fontConfig";
+@import "../SassMixin/radiusMixin";
+.input_blue {
+  width: 419px;
+  height: 64px;
+  input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #2878FF;
+    @include radius(10px);
+    @include inputLabel;
+    font-weight: normal;
+    padding-left: 10px;
+  }
+}
