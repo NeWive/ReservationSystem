@@ -2,14 +2,17 @@ const logInList = [
     {
         name: '学号',
         key: 'stu_id',
+        type: 'text'
     },
     {
         name: '密码',
         key: 'password',
+        type: 'password'
     },
     {
         name: '验证码',
         key: 'validate_code',
+        type: 'text'
     }
 ];
 const findBackList = [
@@ -18,26 +21,31 @@ const findBackList = [
         key: 'stu_id',
     },
 ];
-const registList = [
+const registerList = [
     {
         name: '学号',
         key: 'stu_id',
+        type: 'text'
     },
     {
         name: '姓名',
         key: 'stu_name',
+        type: 'text'
     },
     {
         name: '电话',
         key: 'phone',
+        type: 'text'
     },
     {
         name: '邮箱',
         key: 'email',
+        type: 'text'
     },
     {
-        name: 'password',
-        key: '密码',
+        name: '密码',
+        key: 'password',
+        type: 'password'
     }
 ];
 const applyFormList = [
@@ -184,7 +192,7 @@ const description = '歌尔众创空间是中国海洋大学信息科学与工�
 export {
     logInList,
     findBackList,
-    registList,
+    registerList,
     applyFormList,
     naviList,
     regulationLogForm,

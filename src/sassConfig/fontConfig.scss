@@ -78,7 +78,7 @@
   @include defaultFont(#999999, 16px, normal, MicrosoftYaHei, 16px);
 }
 
-@mixin indexTitle() {
+@mixin indexTitle_emm() {
   @include defaultFont(#2878FF, 30px, bold, MicrosoftYaHei-Bold, 30px);
 }
 
@@ -104,4 +104,12 @@
 
 @mixin tableButton() {
   @include defaultFont(#FFFFFF, 12px, normal, MicrosoftYaHei, 12px);
+}
+
+@mixin findBackLabel() {
+  @include defaultFont(#1A1A1A, 20px, normal, MicrosoftYaHei, 20px);
+}
+
+@mixin footer() {
+  @include defaultFont(#333333, 16px, normal, MicrosoftYaHei, 16px);
 }

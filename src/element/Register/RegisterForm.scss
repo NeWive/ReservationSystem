@@ -1,0 +1,32 @@
+@import "../../sassConfig/fontConfig";
+#RegisterForm {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  background: #FFFFFF;
+  .register_form_container {
+    .title {
+      padding: 73px 0 29px 0;
+      span {
+        @include formTitle;
+      }
+    }
+    .input_list {
+      .input_sel {
+        margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 32px;
+        }
+      }
+    }
+    .submit_box {
+      .selection {
+        margin-bottom: 11px;
+        a {
+          @include selections;
+        }
+      }
+    }
+  }
+}

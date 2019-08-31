@@ -9,6 +9,10 @@
     outline: 0;
     border: 0;
     border-bottom: 2px solid #CCCCCC;
+    padding-left: 10px;
     @include inputLabel;
+    &:focus {
+      border-bottom: 2px solid #2878FF;
+    }
   }
 }

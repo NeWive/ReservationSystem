@@ -1,0 +1,25 @@
+@import "../../sassConfig/fontConfig";
+#Description {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background: #3295D9;
+  padding: 0 102px 0 94px;
+  .description_container {
+    .title {
+      padding: 78px 0 45px 0;
+      text-align: center;
+      span {
+        @include descriptionTitle;
+      }
+    }
+    .content {
+      p {
+        @include descriptionContent;
+        text-indent: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+}

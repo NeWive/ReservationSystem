@@ -1,0 +1,40 @@
+@import "../../sassConfig/fontConfig";
+#LogPanel {
+  width: 1300px;
+  margin: 0 auto;
+  .container {
+    background: inherit;
+    width: 100%;
+    height: 100%;
+    .container_title {
+      text-align: center;
+      padding: 71px 0 49px 0;
+      span {
+        @include indexTitle
+      }
+    }
+    .form_box {
+      box-shadow: 20px 12px 33px 10px rgba(40,120,255,0.2);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      .left, .right {
+        width: 50%;
+        height: 700px;
+      }
+      .left {
+
+      }
+      .right {
+
+      }
+    }
+    .footer {
+      text-align: center;
+      padding: 48px 0 31px 0;
+      span {
+        @include footer;
+      }
+    }
+  }
+}

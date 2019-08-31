@@ -1,9 +1,13 @@
 const initState = {
     isLogin: false,
+    displayedImgIndex: 0,
+    logPanelIndex: 0,
 };
 
 const actionType = {
     'SET_IS_LOG_IN': 'isLogin',
+    'SET_DISPLAYED_IMG_INDEX': 'displayedImgIndex',
+    'SET_LOG_PANEL_INDEX': 'logPanelIndex',
 };
 
 const updateGroup = { type: actionType, action: 0 };

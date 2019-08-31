@@ -8,7 +8,7 @@
     height: 100%;
     border: 1px solid #2878FF;
     @include radius(10px);
-    @include inputLabel;
+    @include applyFormPlaceholder;
     font-weight: normal;
     padding-left: 10px;
   }

@@ -8,8 +8,12 @@ const routeConfig = [
         key: 'admin',
     },
     {
+        path: '/test',
+        key: 'test',
+    },
+    {
         path: '/',
-        key: 'index'
+        key: 'main'
     }
 ];
 

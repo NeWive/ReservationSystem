@@ -1,0 +1,26 @@
+@import "../../SassMixin/radiusMixin";
+.button_box {
+  padding-top: 109px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .button_sel {
+    margin-right: 11px;
+    cursor: pointer;
+    width: 20px;
+    height: 8px;
+    background: #FFFFFF;
+    @include radius(4px);
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .button_move {
+    position: absolute;
+    left: 217px;
+    width: 20px;
+    height: 8px;
+    background: #FFFFFF;
+    @include radius(4px);
+  }
+}
