@@ -1,0 +1,7 @@
+@import "../../sassConfig/fontConfig";
+#ReservationLog {
+  .reservation_title {
+    @include return;
+    margin-bottom: 13px;
+  }
+}

@@ -121,7 +121,11 @@ const editInfoList = [
 ];
 const changePasswordList = [
     {
-        name: '输入密码',
+        name: '账号密码',
+        key: 'password',
+    },
+    {
+        name: '新的密码',
         key: 'password',
     },
     {
@@ -160,26 +164,49 @@ const reservationLogList = [
         name: '主办方',
         type: 'content',
         key: 'holder',
+        width: 150,
     },
     {
         name: '申请场地',
         type: 'content',
         key: 'place',
+        width: 172,
     },
     {
         name: '申请主题',
         type: 'content',
         key: 'title',
+        width: 172,
+    },
+    {
+        name: '申请内容',
+        type: 'content',
+        key: 'content',
+        width: 172,
+    },
+    {
+        name: '申请时间',
+        type: 'content',
+        key: 'time',
+        width: 165,
+    },
+    {
+        name: '状态',
+        type: 'content',
+        key: 'status',
+        width: 89,
     },
     {
         name: '查看详情',
         type: 'button',
         key: 'detailed',
+        width: 150,
     },
     {
         name: '上传照片(5张)',
         type: 'button',
         key: 'upload',
+        width: 150,
     }
 ];
 

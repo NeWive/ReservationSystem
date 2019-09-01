@@ -1,0 +1,22 @@
+@import "../sassConfig/fontConfig";
+@import "../SassMixin/cleatFixMixin";
+#Table {
+  .table_head {
+    @include clearFix;
+    .head_sel {
+      float: left;
+      box-sizing: border-box;
+      padding: 15px 0 14px 20px;
+      background: #F3F3F3;
+      @include table;
+    }
+  }
+  .border {
+    border-left: 2px solid #E5E6E6;
+    border-top: 2px solid #E5E6E6;
+    border-bottom: 2px solid #E5E6E6;
+    &:last-child {
+      border-right: 2px solid #E5E6E6;
+    }
+  }
+}

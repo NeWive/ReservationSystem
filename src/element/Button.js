@@ -5,9 +5,9 @@ class Button extends React.PureComponent{
     render() {
         return (
             <div className="button_blue"
-                onClick={this.props.clickHandler ? this.props.clickHandler : () => {}}
+                onClick={this.props.clickHandler || (() => {console.log('empty')})}
                 style={this.props.style ? this.props.style : {}}
-                key={this.props.key ? this.props.key : ''}>
+                key={this.props.name || ''}>
                 <span>
                     {
                         this.props.children ? this.props.children : ''

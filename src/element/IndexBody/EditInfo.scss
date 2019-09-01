@@ -1,0 +1,24 @@
+@import "../../SassMixin/radiusMixin";
+@import "../../sassConfig/fontConfig";
+@import "../../SassMixin/cleatFixMixin";
+#ChangeInfo {
+  .edit_button_box {
+    @include clearFix;
+    .select_edit_button {
+      margin-right: 39px;
+      float: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 62px;
+      background: #2878FF;
+      cursor: pointer;
+      @include radius(4px);
+      @include buttonSmall;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

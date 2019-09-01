@@ -1,5 +1,7 @@
 import React from 'react';
 import Status from './Status';
+import ChangeInfo from './EditInfo';
+import ReservationLog from './ReservationLog';
 import { connect } from 'react-redux';
 import './ModuleBody.scss';
 
@@ -19,9 +21,9 @@ class ModuleBody extends React.PureComponent {
             case 0:
                 return <Status/>;
             case 1:
-                return '';
+                return <ChangeInfo/>;
             case 2:
-                return '';
+                return <ReservationLog/>;
             case 3:
                 return '';
             default:

@@ -115,3 +115,11 @@
 @mixin footer() {
   @include defaultFont(#333333, 16px, normal, MicrosoftYaHei, 16px);
 }
+
+@mixin buttonSmall() {
+  @include defaultFont(#FFFFFF, 16px, normal, MicrosoftYaHei, 16px);
+}
+
+@mixin editFormInputLabel() {
+  @include defaultFont(#1A1A1A, 16px, normal, MicrosoftYaHei, 16px);
+}
