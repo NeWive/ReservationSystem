@@ -2,6 +2,7 @@ import React from 'react';
 import AnimatedRouter from 'react-animated-router';
 import Test from './Test';
 import Index from './modules/index/Index';
+import ReservationPanel from './modules/reservation/ReservationPanel';
 import { routeConfig }from './config/route.config';
 import { Route } from 'react-router-dom';
 import 'react-animated-router/animate.css';
@@ -12,7 +13,7 @@ function keyMapToComponent(key) {
         case 'test':
             return Test;
         case 'index':
-            return Index;
+            return ReservationPanel;
         default:
             return Index;
     }

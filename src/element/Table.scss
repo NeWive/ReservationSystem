@@ -1,3 +1,4 @@
+@import "../SassMixin/radiusMixin";
 @import "../sassConfig/fontConfig";
 @import "../SassMixin/cleatFixMixin";
 #Table {
@@ -9,6 +10,32 @@
       padding: 15px 0 14px 20px;
       background: #F3F3F3;
       @include table;
+    }
+  }
+  .table_body {
+    .father_container {
+      @include clearFix;
+      height: 40px;
+      .body_sel {
+        border-left: 2px solid #E5E6E6;
+        border-bottom: 2px solid #E5E6E6;
+        padding: 10px 5px 14px 20px;
+        height: 100%;
+        box-sizing: border-box;
+        float: left;
+        font-size: 18px;
+        word-wrap: break-word;
+        position: relative;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        @include table;
+        line-height: 25px;
+        &:last-child {
+          border-right: 2px solid #E5E6E6;
+        }
+      }
     }
   }
   .border {

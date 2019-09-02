@@ -5,7 +5,10 @@ const initState = {
     stuInfo: {
         name: '赵狗蛋',
     },
-    indexPanelIndex: 0,//0:帐号状态,1:修改信息,2:查看预约记录,3:违章记录
+    indexPanelIndex: 0,//0:帐号状态,1:修改信息,2:查看预约记录,3:违章记录,
+    selectedTime: 0,
+    selectedPlace: 0,
+    reservationIndex: 1,
 };
 
 const actionType = {
@@ -13,6 +16,9 @@ const actionType = {
     'SET_DISPLAYED_IMG_INDEX': 'displayedImgIndex',
     'SET_LOG_PANEL_INDEX': 'logPanelIndex',
     'SET_INDEX_PANEL_INDEX': 'indexPanelIndex',
+    'SET_RESERVATION_INDEX': 'reservationIndex',
+    'SET_SELECTED_TIME': 'selectedTime',
+    'SET_SELECTED_PLACE': 'selectedPlace',
 };
 
 const updateGroup = { type: actionType, action: 0 };

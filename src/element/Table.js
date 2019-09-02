@@ -20,6 +20,27 @@ class Table extends React.PureComponent {
                         ))
                     }
                 </div>
+                <div className="table_body">
+                    {
+                        this.props.tdList.map((dItem, dIndex) => (
+                            <div key={`dItem${dIndex}`} className={'father_container'}>
+                                {
+                                    this.props.thList.map((hItem, index) => (
+                                        <div className="body_sel"
+                                             key={`${hItem}${index}`}
+                                            style={{
+                                                width: hItem.width,
+                                            }}>
+                                            {
+                                                this.props.contentHandler(dItem, hItem)
+                                            }
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         )
     }

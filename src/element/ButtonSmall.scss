@@ -1,0 +1,13 @@
+@import "../sassConfig/fontConfig";
+.button_small {
+  width: 89px;
+  height: 20px;
+  background: #009789;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  span {
+    @include buttonSmall;
+  }
+}

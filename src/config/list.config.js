@@ -92,11 +92,13 @@ const regulationLogForm = [
         name: '违章时间',
         key: 'regulation_time',
         width: 200,
+        type: 'content',
     },
     {
         name: '违章原因',
         key: 'regulation_reason',
-        width: 1219,
+        width: 1010,
+        type: 'content',
     },
 ];
 const changeInfoSels = [
@@ -192,7 +194,7 @@ const reservationLogList = [
     },
     {
         name: '状态',
-        type: 'content',
+        type: 'panel',
         key: 'status',
         width: 89,
     },
