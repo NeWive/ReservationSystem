@@ -8,7 +8,7 @@ const initState = {
     indexPanelIndex: 0,//0:帐号状态,1:修改信息,2:查看预约记录,3:违章记录,
     selectedTime: 0,
     selectedPlace: 0,
-    reservationIndex: 1,
+    reservationIndex: 2,
 };
 
 const actionType = {

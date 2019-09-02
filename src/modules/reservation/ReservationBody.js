@@ -1,6 +1,7 @@
 import React from 'react';
 import TimeSelect from '../../element/ReservationBody/TimeSelect';
 import PlaceSelected from '../../element/ReservationBody/PlaceSelected';
+import ReservationForm from '../../element/ReservationBody/ReservationForm';
 import { connect } from 'react-redux';
 import './ReservationBody.scss';
 
@@ -22,7 +23,7 @@ class ReservationBody extends React.PureComponent {
             case 1:
                 return <PlaceSelected/>;
             case 2:
-                return '';
+                return <ReservationForm/>;
             default:
                 return '';
         }

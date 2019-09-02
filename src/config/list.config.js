@@ -50,19 +50,22 @@ const registerList = [
 ];
 const applyFormList = [
     {
-        name: '活动主办方',
+        name: '活动主办方：',
         placeHolder: '请输入活动主办方',
         key: 'holder',
+        type: 'text'
     },
     {
-        name: '申请主题',
+        name: '申请主题：',
         placeHolder: '请输入申请主题',
         key: 'title',
+        type: 'text'
     },
     {
-        name: '申请内容',
+        name: '申请内容：',
         placeHolder: '请输入申请内容',
-        key: 'content'
+        key: 'content',
+        type: 'textarea'
     },
 ];
 const naviList = [
