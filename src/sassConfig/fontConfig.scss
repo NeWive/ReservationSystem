@@ -123,3 +123,7 @@
 @mixin editFormInputLabel() {
   @include defaultFont(#1A1A1A, 16px, normal, MicrosoftYaHei, 16px);
 }
+
+@mixin detailedInfo() {
+  @include defaultFont(#808080, 16px, normal, MicrosoftYaHei, 16px);
+}

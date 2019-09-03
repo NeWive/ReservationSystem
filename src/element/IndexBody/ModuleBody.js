@@ -3,6 +3,7 @@ import Status from './Status';
 import ChangeInfo from './EditInfo';
 import ReservationLog from './ReservationLog';
 import RulesLog from './RulesLog';
+import DetailedInfo from './DetailedInfo';
 import { connect } from 'react-redux';
 import './ModuleBody.scss';
 
@@ -27,6 +28,8 @@ class ModuleBody extends React.PureComponent {
                 return <ReservationLog/>;
             case 3:
                 return <RulesLog/>;
+            case 4:
+                return <DetailedInfo/>
             default:
                 return '';
         }

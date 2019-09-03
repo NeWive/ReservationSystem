@@ -149,19 +149,19 @@ const detailedInfoForm = [
     },
     {
         name: '申请场地',
-        place: 'place',
+        key: 'place',
     },
     {
         name: '申请时间',
-        place: 'time',
+        key: 'time',
     },
     {
         name: '当前状态',
-        place: 'status',
+        key: 'status',
     },
     {
         name: '备注',
-        place: 'ps'
+        key: 'ps'
     }
 ];
 const reservationLogList = [

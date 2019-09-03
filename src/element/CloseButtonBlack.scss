@@ -1,0 +1,25 @@
+#CloseButtonBlack {
+  width: 23px;
+  height: 23px;
+  position: relative;
+  cursor: pointer;
+  .edge {
+    position: absolute;
+    height: 32px;
+    width: 2px;
+    background: #000000;
+    left: 0;
+    top: 0;
+    transform: rotate(-45deg);
+    &:after {
+      content: '';
+      position: absolute;
+      height: 32px;
+      width: 2px;
+      background: #000000;
+      left: 0;
+      top: 0;
+      transform: rotate(90deg);
+    }
+  }
+}

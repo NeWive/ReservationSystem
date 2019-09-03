@@ -1,0 +1,25 @@
+#modal-root {
+  position: relative;
+  top: -100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  .portal_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 200;
+    .popLayer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: gray;
+      width: 100%;
+      height: 100%;
+      z-index: 300;
+      opacity: 0.4;
+    }
+  }
+}

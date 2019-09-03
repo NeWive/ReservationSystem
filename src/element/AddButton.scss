@@ -1,0 +1,32 @@
+#AddButton {
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border: 2px solid #B3B3B3;
+  position: relative;
+  cursor: pointer;
+  .edge {
+    width: 2px;
+    height: 90px;
+    background: #B3B3B3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    &:after {
+      content: '';
+      width: 2px;
+      height: 90px;
+      background: #B3B3B3;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transform: rotate(90deg);
+    }
+  }
+}

@@ -3,15 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9248686b-0819-4d6a-9e5a-188bcc75f39e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/list.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/list.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/redux.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/redux.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/element/InputBlue.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/element/InputBlue.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/element/ReservationBody/PlaceSelected.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/element/ReservationBody/PlaceSelected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/element/ReservationBody/PlaceSelected.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/element/ReservationBody/PlaceSelected.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/element/Textarea.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/element/Textarea.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/element/IndexBody/ModuleBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/element/IndexBody/ModuleBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/element/IndexBody/ReservationLog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/element/IndexBody/ReservationLog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/index/IndexPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/index/IndexPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/reservation/ReservationBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reservation/ReservationBody.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/reservation/ReservationPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/reservation/ReservationPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sassConfig/fontConfig.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sassConfig/fontConfig.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,20 +24,91 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/modules/index/IndexPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="vertical" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/element/IndexBody/DetailedInfo.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="114">
+                  <caret line="86" column="52" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/element/IndexBody/ModuleBody.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-382">
+                  <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/element/IndexBody/ReservationLog.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="148" column="75" selection-start-line="148" selection-start-column="75" selection-end-line="148" selection-end-column="75" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/config/redux.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="19" column="26" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/config/list.config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+                  <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+                  <caret line="159" column="12" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="12" />
+                  <caret line="163" column="12" selection-start-line="163" selection-start-column="12" selection-end-line="163" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/element/IndexBody/DetailedInfo.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="186">
+                  <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/sassConfig/fontConfig.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="202">
+                  <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,34 +132,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/element/IndexBody/IndexBody.scss" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/Status.js" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/Status.scss" />
-        <option value="$PROJECT_DIR$/src/element/Button.js" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/EditInfo.scss" />
-        <option value="$PROJECT_DIR$/src/sassConfig/fontConfig.scss" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/PersonalInfo.js" />
-        <option value="$PROJECT_DIR$/src/functions/stateHandler.js" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/Password.js" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/Password.scss" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/PersonalInfo.scss" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/EditInfo.js" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/ReservationLog.scss" />
-        <option value="$PROJECT_DIR$/src/element/IndexHeader/Header.scss" />
-        <option value="$PROJECT_DIR$/src/element/ButtonSmall.js" />
         <option value="$PROJECT_DIR$/src/element/Table.js" />
         <option value="$PROJECT_DIR$/src/element/ButtonSmall.scss" />
         <option value="$PROJECT_DIR$/src/element/Table.scss" />
         <option value="$PROJECT_DIR$/src/element/StatusPanel.scss" />
         <option value="$PROJECT_DIR$/src/element/StatusPanel.js" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/ReservationLog.js" />
         <option value="$PROJECT_DIR$/src/element/IndexBody/RulesLog.scss" />
-        <option value="$PROJECT_DIR$/src/element/IndexBody/ModuleBody.js" />
         <option value="$PROJECT_DIR$/src/functions/contentHandler.js" />
         <option value="$PROJECT_DIR$/src/element/IndexBody/RulesLog.js" />
         <option value="$PROJECT_DIR$/src/modules/index/ReservationPanel.js" />
         <option value="$PROJECT_DIR$/src/modules/reservation/ReservationPael.scss" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/SassMixin/containerMixin.scss" />
         <option value="$PROJECT_DIR$/src/modules/reservation/ReservationPanel.scss" />
         <option value="$PROJECT_DIR$/src/modules/reservation/ReservationHead.scss" />
@@ -100,17 +154,35 @@
         <option value="$PROJECT_DIR$/src/element/ReservationBody/PlaceSelected.scss" />
         <option value="$PROJECT_DIR$/src/element/ReservationBody/RreservationForm.js" />
         <option value="$PROJECT_DIR$/src/modules/reservation/ReservationBody.js" />
-        <option value="$PROJECT_DIR$/src/config/redux.config.js" />
         <option value="$PROJECT_DIR$/src/element/InputBlue.scss" />
         <option value="$PROJECT_DIR$/src/element/Textarea.scss" />
-        <option value="$PROJECT_DIR$/src/config/list.config.js" />
         <option value="$PROJECT_DIR$/src/element/ReservationBody/ReservationForm.scss" />
         <option value="$PROJECT_DIR$/src/element/LoadingForButton.js" />
         <option value="$PROJECT_DIR$/src/element/ReservationBody/ReservationForm.js" />
         <option value="$PROJECT_DIR$/src/modules/reservation/ReservationFooter.js" />
         <option value="$PROJECT_DIR$/src/modules/reservation/ReservationPanel.js" />
         <option value="$PROJECT_DIR$/src/modules/reservation/ReservationFooter.scss" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Test.scss" />
+        <option value="$PROJECT_DIR$/src/Test.js" />
+        <option value="$PROJECT_DIR$/src/element/AddButton.js" />
+        <option value="$PROJECT_DIR$/src/element/AddButton.scss" />
+        <option value="$PROJECT_DIR$/src/element/Portal/PortalContainer.js" />
+        <option value="$PROJECT_DIR$/src/modules/index/IndexPanel.scss" />
+        <option value="$PROJECT_DIR$/src/element/CloseButtonBlack.scss" />
+        <option value="$PROJECT_DIR$/src/element/Portal/UploadImg.scss" />
+        <option value="$PROJECT_DIR$/src/element/CloseButtonBlack.js" />
+        <option value="$PROJECT_DIR$/src/element/Portal/PortalContainer.scss" />
+        <option value="$PROJECT_DIR$/src/element/Portal/UploadImg.js" />
         <option value="$PROJECT_DIR$/src/modules/index/IndexPanel.js" />
+        <option value="$PROJECT_DIR$/src/element/IndexBody/ModuleBody.js" />
+        <option value="$PROJECT_DIR$/src/config/redux.config.js" />
+        <option value="$PROJECT_DIR$/src/config/list.config.js" />
+        <option value="$PROJECT_DIR$/src/sassConfig/fontConfig.scss" />
+        <option value="$PROJECT_DIR$/src/element/IndexBody/DetailedInfo.js" />
+        <option value="$PROJECT_DIR$/src/element/IndexBody/DetailedInfo.scss" />
+        <option value="$PROJECT_DIR$/src/element/IndexBody/ReservationLog.js" />
       </list>
     </option>
   </component>
@@ -127,13 +199,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="ReservationSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReservationSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReservationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReservationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReservationSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -151,6 +227,20 @@
               <item name="ReservationSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="element" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReservationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReservationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="element" type="462c0819:PsiDirectoryNode" />
+              <item name="IndexBody" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReservationSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReservationSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="element" type="462c0819:PsiDirectoryNode" />
+              <item name="Portal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ReservationSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -175,11 +265,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Gu-" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -193,6 +284,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dell\Desktop\ReservationSystem\src\element\Portal" />
       <recent name="C:\Users\dell\Desktop\ReservationSystem\src\element" />
       <recent name="C:\Users\dell\Desktop\ReservationSystem\src\element\ImgPlayer" />
       <recent name="C:\Users\dell\Desktop\ReservationSystem\src\static" />
@@ -222,18 +314,20 @@
       <updated>1567229750132</updated>
       <workItem from="1567229764972" duration="41750000" />
       <workItem from="1567385174537" duration="19726000" />
-      <workItem from="1567412753402" duration="4929000" />
+      <workItem from="1567412753402" duration="5163000" />
+      <workItem from="1567428132867" duration="836000" />
+      <workItem from="1567441315992" duration="13290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66405000" />
+    <option name="totallyTimeSpent" value="80765000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49947533" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49947533" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.50052464" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -247,7 +341,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.28301886" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.27962577" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -277,173 +371,11 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/Password.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/functions/stateHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/Password.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/EditInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/IndexBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/ButtonSmall.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/ButtonSmall.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/Table.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/Table.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/StatusPanel.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/StatusPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/IndexHeader/Header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/PersonalInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="27" column="30" lean-forward="true" selection-end-line="37" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/PersonalInfo.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/ReservationLog.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/RulesLog.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/ModuleBody.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/functions/contentHandler.js" />
-    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/ReservationLog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="123" column="26" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#293#2530#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/index/ReservationPanel.js" />
     <entry file="file://$PROJECT_DIR$/src/element/IndexBody/RulesLog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -546,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/list.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1222">
-          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/element/ReservationBody/ReservationForm.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -584,13 +509,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/redux.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -638,16 +556,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sassConfig/fontConfig.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/index/Index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="211">
           <caret line="17" column="31" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -655,10 +566,198 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/AddButton.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/AddButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="86" selection-start-line="8" selection-start-column="86" selection-end-line="8" selection-end-column="86" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/index/IndexPanel.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/Portal/UploadImg.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/CloseButtonBlack.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/CloseButtonBlack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/Portal/PortalContainer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/Portal/UploadImg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/Portal/PortalContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/index/IndexPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="264">
+          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/IndexBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/list.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+          <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+          <caret line="159" column="12" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="12" />
+          <caret line="163" column="12" selection-start-line="163" selection-start-column="12" selection-end-line="163" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/StatusPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/DetailedInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="86" column="52" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sassConfig/fontConfig.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/DetailedInfo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/ModuleBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-382">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/redux.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/element/IndexBody/ReservationLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="148" column="75" selection-start-line="148" selection-start-column="75" selection-end-line="148" selection-end-column="75" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

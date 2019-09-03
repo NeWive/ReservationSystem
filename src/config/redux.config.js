@@ -8,7 +8,9 @@ const initState = {
     indexPanelIndex: 0,//0:帐号状态,1:修改信息,2:查看预约记录,3:违章记录,
     selectedTime: 0,
     selectedPlace: 0,
-    reservationIndex: 2,
+    reservationIndex: 0,
+    isPortalOn: false,
+    portalId: -1,//无：-1
 };
 
 const actionType = {
@@ -19,9 +21,12 @@ const actionType = {
     'SET_RESERVATION_INDEX': 'reservationIndex',
     'SET_SELECTED_TIME': 'selectedTime',
     'SET_SELECTED_PLACE': 'selectedPlace',
+    'SET_PORTAL_ON': 'isPortalOn',
+    'SET_PORTAL_ID': 'portalId',
 };
 
 const updateGroup = { type: actionType, action: 0 };
+
 function updateStateHandler(state, action, type) {
     state[updateGroup.type[type]] = action.value;
 }

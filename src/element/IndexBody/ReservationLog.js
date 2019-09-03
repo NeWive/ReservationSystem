@@ -4,6 +4,7 @@ import ButtonSmall from '../ButtonSmall';
 import StatusPanel from '../StatusPanel';
 import { reservationLogList } from "../../config/list.config";
 import { connect } from 'react-redux';
+import { setPropsHandler } from "../../functions/propsHandler";
 import './ReservationLog.scss';
 
 const testData = [
@@ -119,6 +120,25 @@ class ReservationLog extends React.PureComponent {
     constructor(props) {
         super(props);
         this.contentHandler = this.contentHandler.bind(this);
+        this.openPortal = this.openPortal.bind(this);
+        this.switchHandler = this.switchHandler.bind(this);
+        this.setIndex = this.setIndex.bind(this);
+    }
+    setIndex() {
+        setPropsHandler(this, 'SET_INDEX_PANEL_INDEX', 4);
+    }
+    switchHandler(key) {
+        switch (key) {
+            case 'detailed':
+                return this.setIndex;
+            case 'upload':
+                return this.openPortal;
+        }
+    }
+    openPortal() {
+        document.getElementById('modal-root').style.zIndex = '999';
+        setPropsHandler(this, 'SET_PORTAL_ON', true);
+        setPropsHandler(this, 'SET_PORTAL_ID', 0);
     }
     contentHandler(dItem, hItem) {
         switch (hItem.type) {
@@ -126,7 +146,7 @@ class ReservationLog extends React.PureComponent {
                 return dItem[hItem.key];
             case 'button':
                 return (
-                    <ButtonSmall>
+                    <ButtonSmall clickHandler={this.switchHandler(hItem.key)}>
                         { dItem[hItem.key] }
                     </ButtonSmall>
                 );
