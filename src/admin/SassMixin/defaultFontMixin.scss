@@ -1,0 +1,9 @@
+@mixin defaultFont($color, $size, $weight, $family, $lineHeight) {
+  color: $color;
+  font: {
+    size: $size;
+    weight: $weight;
+    family: $family;
+  };
+  line-height: $lineHeight;
+}

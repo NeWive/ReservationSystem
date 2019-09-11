@@ -1,0 +1,31 @@
+@import "../../../SassMixin/radiusMixin";
+@import "../../sassConfig/fontConfig";
+#FindBackForm {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background: #FFFFFF;
+  border-radius: 0 10px 10px 0;
+  .find_back_container {
+    .title {
+      padding: 72px 0 143px 0;
+      span {
+        @include formTitle;
+      }
+    }
+    .input_box {
+      .label {
+        margin-bottom: 25px;
+        span {
+          @include findBackLabel;
+        }
+      }
+      input {
+        color: #1A1A1A;
+      }
+    }
+    .submit_box {
+      margin-top: 186px;
+    }
+  }
+}

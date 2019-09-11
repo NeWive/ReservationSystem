@@ -1,0 +1,71 @@
+@import "../../../SassMixin/containerMixin";
+@import "../../sassConfig/fontConfig";
+#TimeSelect {
+  @include container;
+  position: relative;
+  .title {
+    text-align: center;
+    padding: 37px 0 40px 0;
+    .title_left {
+      position: absolute;
+      left: 0;
+      @include applyFormLabel;
+    }
+    .time_range {
+      @include applyFormLabel;
+    }
+  }
+  .body {
+    display: flex;
+    justify-content: center;
+    .day {
+      width: 164px;
+      margin-right: 29px;
+      &:last-child {
+        margin-right: 0;
+      }
+      .day_date {
+        width: 100%;
+        height: 61px;
+        background: #F1F4F9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .day_time_box {
+        cursor: pointer;
+        width: 100%;
+        height: 111px;
+        background: #F1F4F9;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        padding: 29px 0 0 31px;
+        margin-top: 38px;
+        .day_time {
+          margin-bottom: 11px;
+          @include footer;
+        }
+        .day_status {
+          @include footer;
+          .available {
+            color: #366DB5;
+          }
+          .forbid {
+            color: #FF5622;
+          }
+          .pending {
+            color: #FFB900;
+          }
+        }
+      }
+      .selected {
+        border-color: #2878FF;
+      }
+    }
+  }
+  .submit_box {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+  }
+}

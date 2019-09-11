@@ -1,0 +1,18 @@
+@import "../SassMixin/radiusMixin";
+.button_green_small {
+  width: 100%;
+  background: #009789;
+  padding: 15px 0;
+  //white-space:nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include radius(4px);
+  cursor: pointer;
+  box-sizing: border-box;
+  //overflow:hidden;
+  //text-overflow:ellipsis;
+  color: #FFFFFF;
+  //line-height: 38px;
+  font-size: 14px;
+}

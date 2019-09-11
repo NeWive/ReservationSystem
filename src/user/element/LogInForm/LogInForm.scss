@@ -1,0 +1,44 @@
+@import "../../sassConfig/fontConfig";
+@import "../../../SassMixin/cleatFixMixin";
+#LogInForm {
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background: #FFFFFF;
+  .title {
+    padding: 73px 0 75px;
+    text-align: center;
+    span {
+      @include formTitle;
+    }
+  }
+  .log_in_form_box {
+    display: flex;
+    justify-content: center;
+    .box_container {
+      .input_box {
+        .input_sel {
+          margin-bottom: 70px;
+        }
+      }
+
+      .submit_box {
+        .selections {
+          padding-bottom: 14px;
+          @include clearFix;
+          .left_link, .right_link {
+            a {
+              @include selections;
+            }
+          }
+          .left_link {
+            float: left;
+          }
+
+          .right_link {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}

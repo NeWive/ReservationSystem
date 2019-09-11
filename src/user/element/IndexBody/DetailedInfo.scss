@@ -1,0 +1,103 @@
+@import "../../../SassMixin/cleatFixMixin";
+@import "../../sassConfig/fontConfig";
+#DetailedInfo {
+  @include clearFix;
+  position: relative;
+  .left_box {
+    float: left;
+    margin-right: 211px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:last-child {
+      .info_sel {
+        margin-bottom: 77px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .info_sel {
+      margin-bottom: 80px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .sel {
+        display: inline-block;
+      }
+      .name {
+        width: 100px;
+        @include table;
+      }
+      .info {
+        @include detailedInfo;
+      }
+      .special {
+        width: 120px;
+      }
+      .img_container {
+        display: inline-block;
+        vertical-align: top;
+        width: 405px;
+        .img_box {
+          @include clearFix;
+          .img {
+            margin: 0 15px 15px 0;
+            float: left;
+            width: 120px;
+            height: 120px;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+    .content_box {
+      .name, .info {
+        vertical-align: top;
+      }
+      .info {
+        width: 405px;
+      }
+    }
+  }
+  .back {
+    width: 68px;
+    height: 68px;
+    background: #3295d9;
+    position: absolute;
+    bottom: 110px;
+    right: 110px;
+    cursor: pointer;
+    .back_arrow_box {
+      position: relative;
+      padding: 10px 0 26px 0;
+      .back_arrow {
+        position: absolute;
+        left: 25px;
+        height: 25px;
+        width: 3px;
+        background: #FFFFFF;
+        transform: rotate(45deg);
+        &:after {
+          left: 12px;
+          top: -12px;
+          height: 25px;
+          width: 3px;
+          background: #FFFFFF;
+          transform: rotate(-90deg);
+          position: absolute;
+          content: ' ';
+
+        }
+      }
+    }
+    .words {
+      text-align: center;
+      @include defaultFont(#FFFFFF, 18px, normal, MicrosoftYaHei, 18px);
+    }
+  }
+}

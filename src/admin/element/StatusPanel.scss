@@ -1,0 +1,29 @@
+@import "../SassMixin/radiusMixin";
+.status_panel {
+  height: 22px;
+  padding: 0 5px;
+  @include radius(2px);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  span {
+    color: #FFFFFF;
+    line-height: 22px;
+    font-size: 12px;
+  }
+}
+
+.activated {
+  background: #009789;
+}
+.activating {
+  background: #FFB800;
+}
+.forbidden {
+  background: red;
+}
+.module {
+  background: #009789;
+}

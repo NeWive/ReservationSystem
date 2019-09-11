@@ -1,0 +1,27 @@
+@import "../../../SassMixin/cleatFixMixin";
+@import "../../../SassMixin/radiusMixin";
+#ImgPlayer {
+  .window {
+    width: 391px;
+    height: 296px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    @include radius(10px);
+    .ImgPlayerContainer {
+      width: 391px * 3;
+      position: absolute;
+      left: 0;
+      @include clearFix;
+      .play_sel {
+        width: 391px;
+        height: 296px;
+        float: left;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

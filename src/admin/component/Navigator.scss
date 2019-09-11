@@ -1,0 +1,41 @@
+@import "../SassMixin/cleatFixMixin";
+#Navigator {
+  background: #000000;
+  padding: 15px 20px;
+  .navigator_container {
+    @include clearFix;
+    .left {
+      //display: inline-block;
+      //vertical-align: middle;
+      float: left;
+      span {
+        font-size: 18px;
+      }
+    }
+    .right {
+      //vertical-align: middle;
+      //display: inline-block;
+      float: right;
+      position: relative;
+      margin-top: 4px;
+      span {
+        font-size: 14px;
+      }
+      a {
+        //margin-right: 10px;
+        padding: 0 20px;
+      }
+    }
+    span {
+      color: #FFFFFF;
+    }
+    .under_line {
+      width: 68px;
+      position: absolute;
+      height: 8px;
+      background: #009789;
+      //bottom: 0;
+      transform: translate(0px, 9px);
+    }
+  }
+}

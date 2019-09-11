@@ -1,9 +1,10 @@
 import React from 'react';
 import AnimatedRouter from 'react-animated-router';
 import Test from './Test';
-import Index from './modules/index/Index';
-import ReservationPanel from './modules/reservation/ReservationPanel';
-import { routeConfig }from './config/route.config';
+import Index from './user/modules/index/Index';
+import ReservationPanel from './user/modules/reservation/ReservationPanel';
+import Admin from './admin/container/App.js';
+import { routeConfig }from './user/config/route.config';
 import { Route } from 'react-router-dom';
 import 'react-animated-router/animate.css';
 import './App.scss';
@@ -14,16 +15,16 @@ function keyMapToComponent(key) {
             return Test;
         case 'index':
             return ReservationPanel;
+        case 'user':
+            return Index;
+        case 'admin':
+            return Admin;
         default:
             return Index;
     }
 }
 
 class App extends React.PureComponent {
-    constructor(props) {
-        super(props);
-
-    }
     render() {
         return (
            <div id="App">

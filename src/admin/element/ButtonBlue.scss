@@ -1,0 +1,15 @@
+@import "../SassMixin/radiusMixin";
+.button_green {
+  width: 340px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  background: rgb(24, 159, 146);
+  @include radius(3px);
+  span {
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+}

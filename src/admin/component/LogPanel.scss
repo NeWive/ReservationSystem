@@ -1,0 +1,59 @@
+#LogPanel {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: url("../statics/back.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 20;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: gray;
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: 25;
+  }
+  .log_panel_container {
+    z-index: 30;
+    position: relative;
+    margin-top: 150px;
+    max-height: 420px;
+    max-width: 420px;
+    background: #FFFFFF;
+    padding: 0 40px;
+    .header {
+      width: 100%;
+      background: #189F92;
+      padding: 20px 0;
+      position: relative;
+      margin: 50px 0 45px -60px;
+      span {
+        font-size: 16px;
+        color: #FFFFFF;
+        padding-left: 40px;
+      }
+      &:before {
+        width: 18px;
+        height: 10px;
+        background: url("../statics/aiwrap.png");
+        content: '';
+        position: absolute;
+        left: 2px;
+        bottom: -10px;
+        //z-index: 1;
+      }
+    }
+    .log_in_form {
+      .input_sel {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

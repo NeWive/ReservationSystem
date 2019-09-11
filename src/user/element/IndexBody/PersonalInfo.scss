@@ -1,0 +1,29 @@
+@import "../../../SassMixin/cleatFixMixin";
+@import "../../sassConfig/fontConfig";
+#PersonalInfo {
+  .info_input_box {
+    margin-top: 52px;
+    padding-bottom: 22px;
+    .info_input {
+      margin-left: -50px;
+      margin-bottom: 30px;
+      .input_blue, .info_input_label {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .info_input_label {
+        @include editFormInputLabel;
+      }
+      .input_blue {
+        width: 360px;
+        height: 53px;
+        input {
+          width: 360px;
+          height: 53px;
+          border: 2px solid rgba(40,120,255,1);
+          color: #1A1A1A;
+        }
+      }
+    }
+  }
+}
