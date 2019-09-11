@@ -3,6 +3,7 @@ export const navigator_list = [
         name: '申请用户管理',
         key: 'student_module',
         type: 'menu',
+        mId: 0,
         children: [
             {
                 name: '已注册用户列表',
@@ -32,6 +33,7 @@ export const navigator_list = [
         name: '管理员管理',
         key: 'admin_module',
         type: 'menu',
+        mId: 1,
         children: [
             {
                 name: '管理员列表',
@@ -46,9 +48,10 @@ export const navigator_list = [
         ],
     },
     {
-        name: '锁定列表',
+        name: '锁定管理',
         key: 'lock_module',
         type: 'menu',
+        mId: 2,
         children: [
             {
                 name: '锁定列表',

@@ -1,0 +1,28 @@
+#ModuleList {
+  position: absolute;
+  left: 0;
+  background: rgb(238, 238, 238);
+  min-width: 220px;
+  height: 851px;
+  display: flex;
+  justify-content: center;
+  .module_list_container {
+    margin-top: 20px;
+    overflow: hidden;
+    .father_item, .child_item {
+      padding: 10px 15px 10px 20px;
+      border-bottom: 1px solid rgb(229,229,229);
+      background: rgb(239,239,239);
+      cursor: pointer;
+    }
+    .father_item {
+      position: relative;
+      z-index: 10;
+      overflow: hidden;
+    }
+    ul {
+      position: relative;
+      z-index: 5;
+    }
+  }
+}

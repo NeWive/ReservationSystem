@@ -11,7 +11,7 @@ const initState = {
     reservationIndex: 0,
     isPortalOn: false,
     portalId: -1,//无：-1
-    isAdminLogIn: false,
+    isAdminLogIn: true,
 };
 
 const actionType = {

@@ -4,51 +4,59 @@ import './Navigator.scss';
 
 function Navigator() {
     const widthList = [68, 96];
+    const rightList = [95, 0];
     const linkList = ['注销', '前台首页'];
-    const [transX, setTransX] = useState(15);
-    const [width, setWidth] = useState(0);
-    const [underLineOn, setUnderLineOn] = useState(false);
+    const startWidth = 0;
+    const [startRight, setStartRight] = useState(0);
+    const [endRight, setEndRight] = useState(0);
+    const [endWidth, setEndWidth] = useState(0);
+    const [isStart, setIsStart] = useState(false);
     const defaultStyle = {
-        transform: `translate(0px, ${transX})`,
-        transition: `transform 300ms`,
-        width,
+        transition: `width 300ms, right 300ms`,
+        width: widthList[0],
+        right: 0,
     };
 
     const transitionStyles = {
         entering: {
-            transform: `translate(0px, ${transX})`,
-            width,
+            width: startWidth,
+            right: startRight,
         },
         entered: {
-            transform: `translate(0px, ${transX})`,
-            width,
+            width: startWidth,
+            right: startRight,
         },
         exiting: {
-            transform: `translate(0px, ${transX})`,
-            width,
+            width: endWidth,
+            right: endRight,
         },
         exited: {
-            transform: `translate(0px, ${transX})`,
-            width,
+            width: endWidth,
+            right: endRight,
         },
     };
     return (
-        <div id="Navigator">
+        <div id="AdminNavigator">
             <div className="navigator_container">
                 <div className="left">
                     <span>
                         众创空间预约系统
                     </span>
                 </div>
-                <div className="right">
+                <div className="right" onMouseLeave={(e) => {
+                    e.stopPropagation();
+                    setStartRight(endRight);
+                    setIsStart(true);
+                }} >
                     {
                         linkList.map((item, index) => (
-                            <a href="#" onMouseOver={() => {
-                                setUnderLineOn(true);
-                                console.log(widthList[index]);
-                                setWidth(widthList[index])
-                            }} onMouseOut={() => {
-                                setUnderLineOn(false);
+                            // eslint-disable-next-line jsx-a11y/anchor-is-valid
+                            <a href="#" onMouseEnter={(e) => {
+                                e.stopPropagation();
+                                setEndWidth(widthList[index]);
+                                setEndRight(rightList[index]);
+                                index === 1 ? setStartRight(rightList[0]) : setStartRight(rightList[1]);
+                                setIsStart( false);
                             }} key={index}>
                                 <span>
                                     {
@@ -58,21 +66,19 @@ function Navigator() {
                             </a>
                         ))
                     }
-                    {
-                        underLineOn ? (
-                            <Transition timeout={300} in={true}>
-                                {
-                                    state => (
-                                        <div className="under_line"
-                                            style={{
-                                                ...defaultStyle,
-                                                ...transitionStyles[state],
-                                            }}/>
-                                    )
-                                }
-                            </Transition>
-                        ) : ''
-                    }
+                    <Transition timeout={300}
+                                in={isStart}
+                                appear={true}>
+                        {
+                            state => (
+                                <div className="under_line"
+                                     style={{
+                                         ...defaultStyle,
+                                         ...transitionStyles[state],
+                                     }}/>
+                            )
+                        }
+                    </Transition>
                 </div>
             </div>
         </div>
