@@ -1,7 +1,6 @@
 import React from "react";
 import AdminPanel from "./component/AdminPanel";
 import LogPanel from "./container/LogPanel";
-// import './App.scss';
 
 function App(props) {
     return (

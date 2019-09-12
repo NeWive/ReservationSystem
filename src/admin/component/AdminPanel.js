@@ -1,6 +1,7 @@
 import React from "react";
-import Navigator from "./Navigator";
-import ModuleList from "./ModuleList";
+import Navigator from "../container/Navigator";
+import ModuleList from "../container/ModuleList";
+import ModuleContainer from "./ModuleContainer";
 import './AdminPanel.scss';
 
 
@@ -11,9 +12,8 @@ function AdminPanel() {
                 <Navigator/>
             </div>
             <div className="module_box">
-                <div className="module_list_box">
-                    <ModuleList/>
-                </div>
+                <ModuleList/>
+                <ModuleContainer/>
             </div>
         </div>
     )

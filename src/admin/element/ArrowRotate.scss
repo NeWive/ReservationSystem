@@ -1,0 +1,27 @@
+.ArrowRotate {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  .edge {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4px;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 2px;
+    background: #777777;
+    transform: rotate(45deg);
+    &:after {
+      content: '';
+      width: 10px;
+      height: 2px;
+      background: inherit;
+      transform: rotate(90deg);
+      left: -4px;
+      top: -4px;
+      position: absolute;
+    }
+  }
+}

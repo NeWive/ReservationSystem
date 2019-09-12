@@ -12,6 +12,8 @@ const initState = {
     isPortalOn: false,
     portalId: -1,//无：-1
     isAdminLogIn: true,
+    adminModuleId: -1,
+    isAdminMenuOpen: true,
 };
 
 const actionType = {
@@ -26,6 +28,8 @@ const actionType = {
     'SET_PORTAL_ID': 'portalId',
     'SET_IS_ADMIN_LOG_IN': 'isAdminLogIn',
     'SET_IS_ADMIN_LOGIN': 'isAdminLogIn',
+    'SET_ADMIN_MODULE_ID': 'adminModuleId',
+    'SET_IS_ADMIN_MENU_OPEN': 'isAdminMenuOpen',
 };
 
 const updateGroup = { type: actionType, action: 0 };

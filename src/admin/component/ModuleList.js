@@ -1,85 +1,160 @@
 import React, {useState} from "react";
+import ArrowRotate from "../element/ArrowRotate";
 import { navigator_list } from "../statics/static_content";
 import { TransitionGroup, Transition } from "react-transition-group";
 import './ModuleList.scss';
 
 function ModuleList(props) {
     const defaultStyle = {
-        marginTop: -90,
+        marginTop: -82,
         transition: `margin-top 300ms,opacity 300ms`,
         opacity: 0,
+    };
+    const defaultMenuStyle = {
+        marginLeft: 0,
+        transition: 'margin-left 300ms'
+    };
+    const defaultArrowStyle = {
+        transform: `rotate(0deg)`,
+        transition: `transform 300ms`
+    };
+    const arrowDownStyle = {
+        entering: { transform: `rotate(0deg)` },
+        entered:  { transform: `rotate(0deg)` },
+        exiting:  { transform: `rotate(-90deg)` },
+        exited:  { transform: `rotate(-90deg)` }
+    };
+    const menuStyle = {
+        entering: { marginLeft: 0, },
+        entered:  { marginLeft: 0, },
+        exiting:  { marginLeft: -220, },
+        exited:  { marginLeft: -220, }
+    };
+    const arrowRightStyle = {
+        entering: { transform: `rotate(0deg)` },
+        entered:  { transform: `rotate(0deg)` },
+        exiting:  { transform: `rotate(-180deg)` },
+        exited:  { transform: `rotate(-180deg)` }
     };
     const styles = {
         entering: { marginTop: 0, opacity: 1 },
         entered:  { marginTop: 0, opacity: 1 },
-        exiting:  { marginTop: -90, opacity: 0 },
-        exited:  { marginTop: -90, opacity: 0 }
+        exiting:  { marginTop: -82, opacity: 0 },
+        exited:  { marginTop: -82, opacity: 0 }
     };
-    const [studentModule, setStudentModule] = useState(false);
-    const [adminModule, setAdminModule] = useState(false);
-    const [lockModule, setLockModule] = useState(false);
-    const valueMap = {
-        student_module: studentModule,
-        admin_module: adminModule,
-        lock_module: lockModule,
-    };
-    const funcMap = {
-        student_module: setStudentModule,
-        admin_module: setAdminModule,
-        lock_module: setLockModule,
-    };
+    const [extendMenuId, setExtendMenuId] = useState(-1);
     return (
-        <div id="ModuleList">
-            <TransitionGroup>
-                <div className="module_list_container">
-                    {
-                        navigator_list.map((fItem, index) => (
-                            <>
-                                <div className="father_item" key={fItem.key}>
-                                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                                    <a onClick={() => {
-                                        if(fItem.type === 'menu') {
-                                            funcMap[fItem.key](true);
-                                        }else {
-
-                                        }
-                                    }}>
-                                        {
-                                            fItem.name
-                                        }
-                                    </a>
-                                </div>
+        <Transition timeout={300}
+                    in={props.isAdminMenuOpen}>
+            {
+                state => (
+                    <div id="ModuleList" style={{
+                        ...defaultMenuStyle,
+                        ...menuStyle[state],
+                    }}>
+                        <TransitionGroup>
+                            <div className="module_list_container">
                                 {
-                                    fItem.type === 'menu' ? (
-                                        <Transition timeout={300} in={valueMap[fItem.key]}>
+                                    navigator_list.map((fItem, index) => (
+                                        <>
+                                            <div className="father_item" key={fItem.key} onClick={() => {
+                                                if(fItem.type === 'menu') {
+                                                    setExtendMenuId((extendMenuId === index ? -1 : index));
+                                                    // funcMap[fItem.key](!valueMap[fItem.key]);
+                                                }else {
+                                                    props.setAdminModuleId(fItem.id)
+                                                }
+                                            }}>
+                                                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                                                <a >
+                                                    {
+                                                        fItem.name
+                                                    }
+                                                </a>
+                                                {
+                                                    fItem.type === 'menu' ? (
+                                                        <Transition timeout={300}
+                                                                    in={!(extendMenuId === index)}>
+                                                            {
+                                                                state => (
+                                                                    <div className={`arrow_rotate_box`}
+                                                                         style={{
+                                                                             ...defaultArrowStyle,
+                                                                             ...arrowDownStyle[state],
+                                                                         }}>
+                                                                        <ArrowRotate/>
+                                                                    </div>
+                                                                )
+                                                            }
+                                                        </Transition>
+                                                    ) : (
+                                                        <Transition timeout={300}
+                                                                    in={!(props.adminModuleId === fItem.id)}>
+                                                            {
+                                                                state => (
+                                                                    <div className={`arrow_rotate_box`}
+                                                                         style={{
+                                                                             ...defaultArrowStyle,
+                                                                             ...arrowRightStyle[state],
+                                                                         }}>
+                                                                        <ArrowRotate/>
+                                                                    </div>
+                                                                )
+                                                            }
+                                                        </Transition>
+                                                    )
+                                                }
+                                            </div>
                                             {
-                                                state => (
-                                                    <ul className={`fItem_${fItem.key}`}
-                                                        style={{
-                                                            ...defaultStyle,
-                                                            ...styles[state],
-                                                        }}>
+                                                fItem.type === 'menu' ? (
+                                                    <Transition timeout={300} in={extendMenuId === index}>
                                                         {
-                                                            fItem.children.map((cItem) => (
-                                                                <li key={cItem.key} className={'child_item'}>
+                                                            state => (
+                                                                <ul className={`fItem_${fItem.key}`}
+                                                                    style={{
+                                                                        ...defaultStyle,
+                                                                        ...styles[state],
+                                                                    }}>
                                                                     {
-                                                                        cItem.name
+                                                                        fItem.children.map((cItem) => (
+                                                                            <li key={cItem.key} className={'child_item'} onClick={() => {
+                                                                                props.setAdminModuleId(cItem.id)
+                                                                            }}>
+                                                                                {
+                                                                                    cItem.name
+                                                                                }
+                                                                                <Transition timeout={300}
+                                                                                            in={!(props.adminModuleId === cItem.id)}>
+                                                                                    {
+                                                                                        state => (
+                                                                                            <div className={`arrow_rotate_box`}
+                                                                                                 style={{
+                                                                                                     ...defaultArrowStyle,
+                                                                                                     ...arrowRightStyle[state],
+                                                                                                 }}>
+                                                                                                <ArrowRotate/>
+                                                                                            </div>
+                                                                                        )
+                                                                                    }
+                                                                                </Transition>
+                                                                            </li>
+                                                                        ))
                                                                     }
-                                                                </li>
-                                                            ))
+                                                                </ul>
+                                                            )
                                                         }
-                                                    </ul>
-                                                )
+                                                    </Transition>
+                                                ) : ''
                                             }
-                                        </Transition>
-                                    ) : ''
+                                        </>
+                                    ))
                                 }
-                            </>
-                        ))
-                    }
-                </div>
-            </TransitionGroup>
-        </div>
+                            </div>
+                        </TransitionGroup>
+                    </div>
+                )
+            }
+        </Transition>
     )
 }
 

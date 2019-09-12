@@ -1,9 +1,11 @@
+@import "../../SassMixin/cleatFixMixin";
 #ModuleList {
-  position: absolute;
-  left: 0;
+  //position: absolute;
+  //left: 0;
+  float: left;
   background: rgb(238, 238, 238);
   min-width: 220px;
-  height: 851px;
+  height: 100%;
   display: flex;
   justify-content: center;
   .module_list_container {
@@ -16,13 +18,68 @@
       cursor: pointer;
     }
     .father_item {
+
       position: relative;
       z-index: 10;
       overflow: hidden;
+      //display: flex;
+      //justify-content: center;
+      //align-items: center;
+      //text-align: left;
+      @include clearFix;
+      a {
+        float: left;
+      }
+      .arrow_rotate_box {
+        margin-top: 3px;
+        float: right;
+        position: relative;
+      }
+      &:hover {
+        .arrow_rotate_box {
+          .edge {
+            background: #00dba2;
+          }
+        }
+      }
+    }
+    .child_item {
+      font-size: 14px;
+      .arrow_rotate_box {
+        margin-top: 3px;
+        float: right;
+        position: relative;
+        margin-right: 10px;
+      }
+      &:hover {
+        .arrow_rotate_box {
+          .edge {
+            background: #00dba2;
+          }
+        }
+      }
     }
     ul {
       position: relative;
       z-index: 5;
     }
   }
+}
+
+.admin-menu-enter {
+  margin-left: 0;
+}
+
+.admin-menu-enter-active {
+  margin-left: -220px;
+  transition: margin-left 300ms;
+}
+
+.admin-menu-exit {
+  margin-left: -220px;
+}
+
+.admin-menu-exit-active {
+  margin-left: 0;
+  transition: margin-left 300ms;
 }
