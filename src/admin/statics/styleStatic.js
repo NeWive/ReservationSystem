@@ -1,0 +1,35 @@
+export const statusStyle = {
+    1: {
+        padding: 5,
+        fontSize: 12,
+        border: '1px solid #C9C9C9',
+        color: '#555',
+        cursor: 'pointer',
+        borderRadius: '2px',
+        background: '#FFF',
+        display: 'inline-block',
+        marginTop: -4,
+    },
+    0: {
+        padding: 5,
+        fontSize: 12,
+        // border: '1px solid #C9C9C9',
+        color: '#FFF',
+        cursor: 'pointer',
+        borderRadius: '2px',
+        background: '#FF5722',
+        display: 'inline-block',
+        marginTop: -4,
+    },
+    2: {
+        padding: 5,
+        fontSize: 12,
+        // border: '1px solid #C9C9C9',
+        color: '#FFF',
+        cursor: 'pointer',
+        borderRadius: '2px',
+        background: '#FFB800',
+        display: 'inline-block',
+        marginTop: -4,
+    }
+};

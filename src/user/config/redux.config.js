@@ -9,10 +9,10 @@ const initState = {
     selectedTime: 0,
     selectedPlace: 0,
     reservationIndex: 0,
-    isPortalOn: false,
+    isPortalOn: true,
     portalId: -1,//无：-1
     isAdminLogIn: true,
-    adminModuleId: -1,
+    adminModuleId: 0,
     isAdminMenuOpen: true,
 };
 

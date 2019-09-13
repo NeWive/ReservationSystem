@@ -67,28 +67,51 @@ export const navigator_list = [
     },
 ];
 
+export let module_tips = {};
+function generateTips() {
+    for(let item of navigator_list) {
+        if(item.type === 'menu') {
+            for(let t of item.children) {
+                let temp = [];
+                temp.push(item.name);
+                temp.push(t);
+                module_tips[t.id] = temp;
+            }
+        }else {
+            module_tips[item.id] = [item];
+        }
+    }
+    console.log(module_tips);
+}
+generateTips();
+
 export const registered_user_table = [
+    // {
+    //     key: 'checkbox',
+    //     type: 'checkbox',
+    // },
     {
         name: '用户名',
         type: 'content',
-        key: 'user_name',
-        width: 523,
+        key: 'username',
     },
     {
         name: '电子邮箱',
         type: 'content',
         key: 'email',
-        width: 523,
     },
     {
         name: '状态',
         type: 'button',
         key: 'status',
-        width: 523,
     },
 ];
 
 export const validate_user_table = [
+    {
+        key: 'checkbox',
+        type: 'checkbox',
+    },
     {
         name: '学号',
         type: 'content',
@@ -174,6 +197,10 @@ export const book_info_table = [
 
 export const user_info_form = [
     {
+        key: 'checkbox',
+        type: 'checkbox',
+    },
+    {
         name: '学号',
         key: 'student_id',
         type: 'input',
@@ -186,6 +213,10 @@ export const user_info_form = [
 ];
 
 export const set_status_form = [
+    {
+        key: 'checkbox',
+        type: 'checkbox',
+    },
     {
         name: '违规情况',
         key: 'status',
@@ -302,6 +333,10 @@ export const admin_table = [
 ];
 
 export const receiver_table = [
+    {
+        key: 'checkbox',
+        type: 'checkbox',
+    },
     {
         name: '用户名',
         type: 'content',

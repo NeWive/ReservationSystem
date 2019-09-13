@@ -1,8 +1,9 @@
 import React from "react";
 import Navigator from "../container/Navigator";
 import ModuleList from "../container/ModuleList";
-import ModuleContainer from "./ModuleContainer";
+import ModuleContainer from "../container/ModuleContainer";
 import './AdminPanel.scss';
+import PortalContainer from "../../user/element/Portal/PortalContainer";
 
 
 function AdminPanel() {
@@ -11,7 +12,7 @@ function AdminPanel() {
             <div className="navigator_box">
                 <Navigator/>
             </div>
-            <div className="module_box">
+            <div className="admin_module_box">
                 <ModuleList/>
                 <ModuleContainer/>
             </div>

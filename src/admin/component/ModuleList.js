@@ -40,7 +40,7 @@ function ModuleList(props) {
         entering: { marginTop: 0, opacity: 1 },
         entered:  { marginTop: 0, opacity: 1 },
         exiting:  { marginTop: -82, opacity: 0 },
-        exited:  { marginTop: -82, opacity: 0 }
+        exited:  { marginTop: -82, opacity: 0, visibility: 'hidden' }
     };
     const [extendMenuId, setExtendMenuId] = useState(-1);
     return (
@@ -62,6 +62,7 @@ function ModuleList(props) {
                                                     setExtendMenuId((extendMenuId === index ? -1 : index));
                                                     // funcMap[fItem.key](!valueMap[fItem.key]);
                                                 }else {
+                                                    console.log(fItem.id);
                                                     props.setAdminModuleId(fItem.id)
                                                 }
                                             }}>

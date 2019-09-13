@@ -1,0 +1,14 @@
+#ModuleTips {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 20px;
+  a, span {
+    font-size: 14px;
+    color: #999;
+    &:first-child {
+      margin-left: 10px;
+    }
+  }
+  a:hover {
+    color: #00dba2;
+  }
+}

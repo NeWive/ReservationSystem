@@ -2,11 +2,16 @@
   width: 20px;
   height: 20px;
   position: relative;
+  &:hover {
+    .edge {
+      background: #00bf8e;
+    }
+  }
   .edge {
     position: absolute;
     left: 0;
     right: 0;
-    top: 4px;
+    top: 5px;
     bottom: 0;
     margin: auto;
     width: 10px;
