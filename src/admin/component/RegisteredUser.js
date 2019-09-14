@@ -8,11 +8,19 @@ import './RegisteredUser.scss';
 
 //0 已冻结 1 已激活 2 已冻结
 function RegisteredUser(props) {
+    function portalHandler(target) {
+        document.getElementById('modal-root').style.zIndex = 999;
+        props.setPortalTarget(target);
+        props.setPortalStatus(true);
+        props.setPortalId(0);
+    }
     function contentHandler(item, key) {
         if(key === 'status') {
             return (
                 <div className="validated" style={{
                     ...statusStyle[item[key]]
+                }} onClick={() => {
+                    portalHandler(item);
                 }}>
                     {
                         (() => {
@@ -184,8 +192,8 @@ function RegisteredUser(props) {
                     total={data.length}//state 总量
                     batchSize={batchSize}//state 每页的个数
                     currentBatch={currentBatch}// 当前页数 0 开始
-                    // setBatchSize={setBatchSize}
-                    // setCurrentBatch={setCurrentBatch}
+                    setBatchSize={setBatchSize}
+                    setCurrentBatch={setCurrentBatch}
                     />
         </div>
     )

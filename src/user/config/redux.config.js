@@ -9,11 +9,12 @@ const initState = {
     selectedTime: 0,
     selectedPlace: 0,
     reservationIndex: 0,
-    isPortalOn: true,
+    isPortalOn: false,
     portalId: -1,//无：-1
     isAdminLogIn: true,
     adminModuleId: 0,
     isAdminMenuOpen: true,
+    adminPortalTarget: '',
 };
 
 const actionType = {
@@ -30,6 +31,7 @@ const actionType = {
     'SET_IS_ADMIN_LOGIN': 'isAdminLogIn',
     'SET_ADMIN_MODULE_ID': 'adminModuleId',
     'SET_IS_ADMIN_MENU_OPEN': 'isAdminMenuOpen',
+    'SET_ADMIN_PORTAL_TARGET': 'adminPortalTarget',
 };
 
 const updateGroup = { type: actionType, action: 0 };

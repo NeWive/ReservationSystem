@@ -140,19 +140,19 @@ function Table(props) {
                             }
                         </span>
                     </div>
-                    {/*<div className="set_batch_size_box">*/}
-                    {/*    <select>*/}
-                    {/*        {*/}
-                    {/*            batchSizeArr.map((item, index) => (*/}
-                    {/*                <option value={item} selected={index === 1 ? 'selected' : ''}>*/}
-                    {/*                    {*/}
-                    {/*                        `${item} 条/页`*/}
-                    {/*                    }*/}
-                    {/*                </option>*/}
-                    {/*            ))*/}
-                    {/*        }*/}
-                    {/*    </select>*/}
-                    {/*</div>*/}
+                    <div className="set_batch_size_box">
+                        <select>
+                            {
+                                batchSizeArr.map((item, index) => (
+                                    <option value={item} selected={index === 1 ? 'selected' : ''}>
+                                        {
+                                            `${item} 条/页`
+                                        }
+                                    </option>
+                                ))
+                            }
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>

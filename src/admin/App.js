@@ -2,10 +2,13 @@ import React from "react";
 import AdminPanel from "./component/AdminPanel";
 import LogPanel from "./container/LogPanel";
 import PortalContainer from "../user/element/Portal/PortalContainer";
+import HandleStatus from "./container/HandleStatus";
 
 function App(props) {
     function switchHandler() {
         switch (props.portalId) {
+            case 0:
+                return <HandleStatus/>;
             default:
                 return 'default';
         }

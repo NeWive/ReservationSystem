@@ -1,0 +1,14 @@
+@import "../../SassMixin/radiusMixin";
+#HandlerStatus {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #FFFFFF;
+  @include radius(5px);
+  z-index: 9999;
+}
