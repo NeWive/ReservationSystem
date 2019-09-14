@@ -1,8 +1,15 @@
 import React from "react";
 import CloseButtonBlack from "../../element/CloseButtonBlack";
+import ButtonGreenSmall from '../../element/ButtonBlueSmall';
 import './HandlerStatus.scss';
 
 function HandleStatus(props) {
+    function closePortalHandler() {
+        props.setPortalId(-1);
+        props.setPortalStatus(false);
+        props.setPortalTarget('');
+        document.getElementById('modal-root').style.zIndex = -1;
+    }
     const mapStatus = {
         0: '已冻结',
         1: '已激活',
@@ -16,24 +23,48 @@ function HandleStatus(props) {
                     提示
                 </div>
                 <div className="right">
-                    <CloseButtonBlack/>
+                    <CloseButtonBlack clickHandler={closePortalHandler}/>
                 </div>
             </div>
             <div className="handle_status_body">
-                {
-                    console.log(props.adminPortalTarget)
-                }
-                <select>
+                <div className="username">
                     {
-                        statusList.map((item) => (
-                            <option value={item} selected={props.adminPortalTarget.status === item ? 'selected' : ''} key={item}>
-                                {
-                                    mapStatus[item]
-                                }
-                            </option>
-                        ))
+                        `用户名: ${props.adminPortalTarget.username}`
                     }
-                </select>
+                </div>
+                <div className="email">
+                    {
+                        `邮箱: ${props.adminPortalTarget.email}`
+                    }
+                </div>
+                <div className="set_status">
+                    <div className={'others'}>
+                        设置状态：
+                    </div>
+                    <select>
+                        {
+                            statusList.map((item) => (
+                                <option value={item} selected={props.adminPortalTarget.status === item ? 'selected' : ''} key={item}>
+                                    {
+                                        mapStatus[item]
+                                    }
+                                </option>
+                            ))
+                        }
+                    </select>
+                </div>
+                <div className="handle_button">
+                    <div className="left">
+                        <ButtonGreenSmall>
+                            确定
+                        </ButtonGreenSmall>
+                    </div>
+                    <div className="right">
+                        <ButtonGreenSmall  clickHandler={closePortalHandler}>
+                            取消
+                        </ButtonGreenSmall>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from "react";
 import './ButtonBlueSmall.scss';
 
-function ButtonBlue(props) {
+function ButtonGreenSmall(props) {
     return (
         <div className="button_green_small"
              onClick={props.clickHandler}
@@ -14,4 +14,4 @@ function ButtonBlue(props) {
     )
 }
 
-export default ButtonBlue;
+export default ButtonGreenSmall;

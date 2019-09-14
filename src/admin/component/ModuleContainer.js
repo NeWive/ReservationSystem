@@ -1,5 +1,6 @@
 import React from "react";
 import RegisteredUser from "../container/RegisteredUser";
+import ValidateUser from "../container/ValidateUser";
 import ModuleTips from "../container/ModuleTips";
 import './ModuleContainer.scss';
 
@@ -9,7 +10,7 @@ function ModuleContainer(props) {
             case 0:
                 return <RegisteredUser/>;//registered_user
             case 1:
-                return '';//user_validate
+                return <ValidateUser/>;//user_validate
             case 2:
                 return '';//book_module
             case 3:

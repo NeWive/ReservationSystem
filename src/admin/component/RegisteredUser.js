@@ -14,7 +14,8 @@ function RegisteredUser(props) {
         props.setPortalStatus(true);
         props.setPortalId(0);
     }
-    function contentHandler(item, key) {
+    function contentHandler(item, fItem) {
+        let key = fItem.key;
         if(key === 'status') {
             return (
                 <div className="validated" style={{

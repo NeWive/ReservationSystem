@@ -1,5 +1,6 @@
 import React from "react";
 import AdminPanel from "./component/AdminPanel";
+import EditUserInfo from "./container/EditUserInfo";
 import LogPanel from "./container/LogPanel";
 import PortalContainer from "../user/element/Portal/PortalContainer";
 import HandleStatus from "./container/HandleStatus";
@@ -9,6 +10,8 @@ function App(props) {
         switch (props.portalId) {
             case 0:
                 return <HandleStatus/>;
+            case 1:
+                return <EditUserInfo/>
             default:
                 return 'default';
         }

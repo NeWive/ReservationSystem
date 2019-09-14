@@ -21,6 +21,7 @@ function Input(props) {
                onChange={props.onChangeHandler ? props.onChangeHandler : () => {}}
                onFocus={focusHandler}
                onBlur={blurHandler}
+               value={props.value ? props.value : ''}
         />
     )
 }

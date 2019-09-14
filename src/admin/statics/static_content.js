@@ -126,13 +126,13 @@ export const validate_user_table = [
     },
     {
         name: '编辑',
-        type: 'button',
+        type: 'edit',
         key: 'edit_info',
         width: 380,
     },
     {
         name: '删除',
-        type: 'button',
+        type: 'delete',
         key: 'delete_info',
         width: 380,
     },
@@ -197,10 +197,6 @@ export const book_info_table = [
 
 export const user_info_form = [
     {
-        key: 'checkbox',
-        type: 'checkbox',
-    },
-    {
         name: '学号',
         key: 'student_id',
         type: 'input',
@@ -213,10 +209,6 @@ export const user_info_form = [
 ];
 
 export const set_status_form = [
-    {
-        key: 'checkbox',
-        type: 'checkbox',
-    },
     {
         name: '违规情况',
         key: 'status',
@@ -309,6 +301,10 @@ export const edit_admin_password = [
 ];
 
 export const admin_table = [
+    {
+        key: 'checkbox',
+        type: 'checkbox',
+    },
     {
         name: '用户名',
         type: 'content',

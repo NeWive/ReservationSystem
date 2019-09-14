@@ -5,6 +5,10 @@ import ArrowRotate from "./ArrowRotate";
 //
 // thList：{ name, type, key }
 function Table(props) {
+    let length = props.thList.length;
+    if(props.thList[0].type === 'checkbox') {
+        length--;
+    }
     const pageHandler = () => {
         let pageTotal = props.total / props.batchSize;
         let pageArr = [];
@@ -65,7 +69,7 @@ function Table(props) {
                     props.thList.map ? props.thList.map((item) => (
                         <div className="th_child"
                             style={{
-                                width: `${item.type !== 'checkbox' ? 80/props.thList.length : 3}%`
+                                width: `${item.type !== 'checkbox' ? 80/length : 3}%`
                             }}
                              key={item.key}>
                             {
@@ -88,13 +92,13 @@ function Table(props) {
                                         <div className="td_child"
                                              key={`${cIndex}${fItem.key}`}
                                              style={{
-                                                 width: `${cItem.type !== 'checkbox' ? 80/props.thList.length : 3}%`
+                                                 width: `${cItem.type !== 'checkbox' ? 80/length : 3}%`
                                              }}>
                                     <span>
                                         {
                                             cItem.type === 'checkbox' ? (
                                                 <input type="checkbox" className={'select_all checkbox'} value={''}/>
-                                            ) : (props.contentHandler ? props.contentHandler(fItem, cItem.key) : fItem[cItem.key])
+                                            ) : (props.contentHandler ? props.contentHandler(fItem, cItem) : fItem[cItem.key])
                                         }
                                     </span>
                                         </div>
@@ -108,7 +112,7 @@ function Table(props) {
             }
             <div className="td_sel page_module">
                 <div className="td_child" style={{
-                    width: '80%'
+                    width: `${props.thList[0].type !== 'checkbox' ? 80 : 83}%`
                 }}>
                     <div className="left_arrow_box">
                         <ArrowRotate/>
